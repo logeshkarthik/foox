@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>Login  | Foox</title>
+	<!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description">
     <meta content="Themesbrand" name="author">
     <!-- App favicon -->
+
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
     <!-- Bootstrap Css -->
@@ -32,7 +34,7 @@
                         <div class="bg-primary">
                             <div class="text-primary text-center p-4">
                                 <h5 class="text-white font-size-20">Welcome Back !</h5>
-                                <p class="text-white-50">Sign in to continue to Foox.</p>
+                                <a href="<?php echo base_url('auth'); ?>"><p class="text-white-50">Sign in to continue to Foox.</p></a>
                               <!--  <a href class="logo logo-admin">
                                    <!-- <img src="assets/images/logo-sm.png" height="24" alt="logo">-->
                              <!--   </a>-->
@@ -41,16 +43,25 @@
 
                         <div class="card-body p-4">
                             <div class="p-3">
-                                <form class="form-horizontal mt-4" action="index.html">
+							
+                                <form class="form-horizontal mt-4" action="<?php echo base_url('auth/login') ?>">
 
                                     <div class="form-group">
                                         <label for="email">Email</label>
-                                        <input type="text" class="form-control" id="email" placeholder="Enter email">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" autocomplete="off">
+										<?php echo validation_errors(); ?>  
+
+    <?php if(!empty($errors)) {
+      echo $errors;
+    } ?>
+
                                     </div>
 
                                     <div class="form-group">
                                         <label for="userpassword">Password</label>
-                                        <input type="password" class="form-control" id="userpassword" placeholder="Enter password">
+                                        <input type="password" class="form-control" name="password" id="password" placeholder="Enter password"  autocomplete="off">
+										 
+
                                     </div>
 
                                     <div class="form-group row">
@@ -79,8 +90,8 @@
                     </div>
 
                     <div class="mt-5 text-center">
-                        <p>Don't have an account ? <a href="pages-register.html" class="font-weight-medium text-primary"> Signup now </a> </p>
-                      <!--  <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Veltrix. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>-->
+                        <!-- <p>Don't have an account ? <a href="pages-register.html" class="font-weight-medium text-primary"> Signup now </a> </p>
+                       <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Veltrix. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>-->
                     </div>
 
 

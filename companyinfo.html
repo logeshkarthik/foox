@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Foox | Users</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description">
+        <meta content="Themesbrand" name="author">
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- DataTables -->
+        <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
+
+        <!-- Responsive datatable examples -->
+        <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css">    
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body data-sidebar="dark">
+
+        
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <div class="page-title-box">
+                                    <h2 class="font-size-18">Manage Company</h2>
+                                    <ol class="breadcrumb mb-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Company</a></li>
+                                        
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="float-right d-none d-md-block">
+                                     <?php if(in_array('createCategory', $user_permission)): ?>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                        <!-- end page title -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Manage Company Information</h4><br>
+                                        <!-- <p class="card-title-desc">Here are examples of <code class="highlighter-rouge">.form-control</code> applied to each
+                                            textual HTML5 <code class="highlighter-rouge">&lt;input&gt;</code> <code class="highlighter-rouge">type</code>.</p> -->
+                                            
+                                            
+                                        <div class="form-group row">
+                                            <label for="example-text-input" class="col-sm-2 col-form-label">Company Name</label>
+                                            <div class="col-sm-10">
+                                                <input class="form-control" type="text" placeholder="Enter Company Name" id="example-text-input">
+                                            </div>
+                                        </div>
+                                       
+										
+                                        <div class="form-group row">
+                                            <label for="example-text-input" class="col-sm-2 col-form-label">Charge Amount (%)</label>
+                                            <div class="col-sm-10">
+                                                <input class="form-control" type="text" placeholder="Enter Charge Amount (%)" id="example-text-input">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="example-text-input" class="col-sm-2 col-form-label">Vat Charge (%)</label>
+                                            <div class="col-sm-10">
+                                                <input class="form-control" type="text" placeholder="Enter Vat Charge (%)" id="example-text-input">
+                                            </div>
+                                        </div>
+										<div class="form-group row">
+                                            <label for="example-text-input" class="col-sm-2 col-form-label">Address</label>
+                                            <div class="col-sm-10">
+                                                <input class="form-control" type="text" placeholder="Enter Address" id="example-text-input">
+                                            </div>
+                                        </div>
+										
+                                        <div class="form-group row">
+                                            <label for="example-tel-input" class="col-sm-2 col-form-label">Phone</label>
+                                            <div class="col-sm-10">
+                                                <input class="form-control" type="tel"  placeholder="Enter Phone" id="example-tel-input">
+                                            </div>
+                                        </div>
+										<div class="form-group row">
+                                            <label for="example-text-input" class="col-sm-2 col-form-label">Country</label>
+                                            <div class="col-sm-10">
+                                                <input class="form-control" type="text" placeholder="Enter Country" id="example-text-input">
+                                            </div>
+                                        </div>
+										<div class="form-group row">
+                                          <span style="color:red;">  message box....code pending.......................................</span>
+                                        </div>
+										
+										<div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Currency</label>
+                                                <div class="col-sm-10">
+                                                    <select class="form-control">
+                                                        <option value="">~~SELECT~~</option>
+
+                                          <option value="AED">AED</option>
+                                          <option value="AFN">AFN</option>
+                                          <option value="ALL">ALL</option>
+                                          <option value="ANG">ANG</option>
+                                          <option value="AOA">AOA</option>
+                                          <option value="ARS">ARS</option>
+                                          <option value="AUD">AUD</option>
+                                          <option value="AWG">AWG</option>
+                                          <option value="AZN">AZN</option>
+                                          <option value="BAM">BAM</option>
+                                          <option value="BBD">BBD</option>
+                                          <option value="BDT">BDT</option>
+                                          <option value="BGN">BGN</option>
+                                          <option value="BHD">BHD</option>
+                                          <option value="BIF">BIF</option>
+                                          <option value="BMD">BMD</option>
+                                          <option value="BND">BND</option>
+                                          <option value="BOB">BOB</option>
+                                          <option value="BRL">BRL</option>
+                                          <option value="BSD">BSD</option>
+                                          <option value="BTN">BTN</option>
+                                          <option value="BWP">BWP</option>
+                                          <option value="BYR">BYR</option>
+                                          <option value="BZD">BZD</option>
+                                          <option value="CAD">CAD</option>
+                                          <option value="CDF">CDF</option>
+                                          <option value="CHF">CHF</option>
+                                          <option value="CLP">CLP</option>
+                                          <option value="CNY">CNY</option>
+                                          <option value="COP">COP</option>
+                                          <option value="CRC">CRC</option>
+                                          <option value="CUP">CUP</option>
+                                          <option value="CVE">CVE</option>
+                                          <option value="CZK">CZK</option>
+                                          <option value="DJF">DJF</option>
+                                          <option value="DKK">DKK</option>
+                                          <option value="DOP">DOP</option>
+                                          <option value="DZD">DZD</option>
+                                          <option value="EGP">EGP</option>
+                                          <option value="ETB">ETB</option>
+                                          <option value="EUR">EUR</option>
+                                          <option value="FJD">FJD</option>
+                                          <option value="FKP">FKP</option>
+                                          <option value="GBP">GBP</option>
+                                          <option value="GEL">GEL</option>
+                                          <option value="GHS">GHS</option>
+                                          <option value="GIP">GIP</option>
+                                          <option value="GMD">GMD</option>
+                                          <option value="GNF">GNF</option>
+                                          <option value="GTQ">GTQ</option>
+                                          <option value="GYD">GYD</option>
+                                          <option value="HKD">HKD</option>
+                                          <option value="HNL">HNL</option>
+                                          <option value="HRK">HRK</option>
+                                          <option value="HTG">HTG</option>
+                                          <option value="HUF">HUF</option>
+                                          <option value="IDR">IDR</option>
+                                          <option value="ILS">ILS</option>
+                                          <option value="INR">INR</option>
+                                          <option value="IQD">IQD</option>
+                                          <option value="IRR">IRR</option>
+                                          <option value="ISK">ISK</option>
+                                          <option value="JEP">JEP</option>
+                                          <option value="JMD">JMD</option>
+                                          <option value="JOD">JOD</option>
+                                          <option value="JPY">JPY</option>
+                                          <option value="KES">KES</option>
+                                          <option value="KGS">KGS</option>
+                                          <option value="KHR">KHR</option>
+                                          <option value="KMF">KMF</option>
+                                          <option value="KPW">KPW</option>
+                                          <option value="KRW">KRW</option>
+                                          <option value="KWD">KWD</option>
+                                          <option value="KYD">KYD</option>
+                                          <option value="KZT">KZT</option>
+                                          <option value="LAK">LAK</option>
+                                          <option value="LBP">LBP</option>
+                                          <option value="LKR">LKR</option>
+                                          <option value="LRD">LRD</option>
+                                          <option value="LSL">LSL</option>
+                                          <option value="LTL">LTL</option>
+                                          <option value="LVL">LVL</option>
+                                          <option value="LYD">LYD</option>
+                                          <option value="MAD">MAD</option>
+                                          <option value="MDL">MDL</option>
+                                          <option value="MGA">MGA</option>
+                                          <option value="MKD">MKD</option>
+                                          <option value="MMK">MMK</option>
+                                          <option value="MNT">MNT</option>
+                                          <option value="MOP">MOP</option>
+                                          <option value="MRO">MRO</option>
+                                          <option value="MUR">MUR</option>
+                                          <option value="MVR">MVR</option>
+                                          <option value="MWK">MWK</option>
+                                          <option value="MXN">MXN</option>
+                                          <option value="MYR">MYR</option>
+                                          <option value="MZN">MZN</option>
+                                          <option value="NAD">NAD</option>
+                                          <option value="NGN">NGN</option>
+                                          <option value="NIO">NIO</option>
+                                          <option value="NOK">NOK</option>
+                                          <option value="NPR">NPR</option>
+                                          <option value="NZD">NZD</option>
+                                          <option value="OMR">OMR</option>
+                                          <option value="PAB">PAB</option>
+                                          <option value="PEN">PEN</option>
+                                          <option value="PGK">PGK</option>
+                                          <option value="PHP">PHP</option>
+                                          <option value="PKR">PKR</option>
+                                          <option value="PLN">PLN</option>
+                                          <option value="PYG">PYG</option>
+                                          <option value="QAR">QAR</option>
+                                          <option value="RON">RON</option>
+                                          <option value="RSD">RSD</option>
+                                          <option value="RUB">RUB</option>
+                                          <option value="RWF">RWF</option>
+                                          <option value="SAR">SAR</option>
+                                          <option value="SBD">SBD</option>
+                                          <option value="SCR">SCR</option>
+                                          <option value="SDG">SDG</option>
+                                          <option value="SEK">SEK</option>
+                                          <option value="SGD">SGD</option>
+                                          <option value="SHP">SHP</option>
+                                          <option value="SLL">SLL</option>
+                                          <option value="SOS">SOS</option>
+                                          <option value="SRD">SRD</option>
+                                          <option value="STD">STD</option>
+                                          <option value="SVC">SVC</option>
+                                          <option value="SYP">SYP</option>
+                                          <option value="SZL">SZL</option>
+                                          <option value="THB">THB</option>
+                                          <option value="TJS">TJS</option>
+                                          <option value="TMT">TMT</option>
+                                          <option value="TND">TND</option>
+                                          <option value="TOP">TOP</option>
+                                          <option value="TRY">TRY</option>
+                                          <option value="TTD">TTD</option>
+                                          <option value="TWD">TWD</option>
+                                          <option value="UAH">UAH</option>
+                                          <option value="UGX">UGX</option>
+                                          <option value="USD">USD</option>
+                                          <option value="UYU">UYU</option>
+                                          <option value="UZS">UZS</option>
+                                          <option value="VEF">VEF</option>
+                                          <option value="VND">VND</option>
+                                          <option value="VUV">VUV</option>
+                                          <option value="WST">WST</option>
+                                          <option value="XAF">XAF</option>
+                                          <option value="XCD">XCD</option>
+                                          <option value="XPF">XPF</option>
+                                          <option value="YER">YER</option>
+                                          <option value="ZAR">ZAR</option>
+                                          <option value="ZMK">ZMK</option>
+                                          <option value="ZWL">ZWL</option>
+                                      </select>
+                                                    </select>
+                                                </div>
+                                            </div>
+										
+                                       
+										
+                                        <div class="dropdown d-inline-block">
+                                            <button class="btn btn-primary dropdown-toggle waves-effect waves-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                 Save Changes
+                                            </button>
+                                            <button class="btn btn-warning dropdown-toggle waves-effect waves-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Back
+                                           </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div> <!-- end col -->
+                        </div> <!-- end row -->
+
+         
+
+                        
+
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                
+              <!--  <footer >
+                   
+                </footer>-->
+
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+            <div data-simplebar class="h-100">
+                <div class="rightbar-title px-3 py-4">
+                    <a href="javascript:void(0);" class="right-bar-toggle float-right">
+                        <i class="mdi mdi-close noti-icon"></i>
+                    </a>
+                    <h5 class="m-0">Settings</h5>
+                </div>
+
+                <!-- Settings -->
+                <hr class="mt-0">
+                <h6 class="text-center">Choose Layouts</h6>
+
+                <div class="p-4">
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt>
+                    </div>
+                    <div class="custom-control custom-switch mb-3">
+                        <input type="checkbox" class="custom-control-input theme-choice" id="light-mode-switch" checked>
+                        <label class="custom-control-label" for="light-mode-switch">Light Mode</label>
+                    </div>
+    
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-2.jpg" class="img-fluid img-thumbnail" alt>
+                    </div>
+                    <div class="custom-control custom-switch mb-3">
+                        <input type="checkbox" class="custom-control-input theme-choice" id="dark-mode-switch" data-bsStyle="assets/css/bootstrap-dark.min.css" data-appStyle="assets/css/app-dark.min.css">
+                        <label class="custom-control-label" for="dark-mode-switch">Dark Mode</label>
+                    </div>
+    
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-3.jpg" class="img-fluid img-thumbnail" alt>
+                    </div>
+                    <div class="custom-control custom-switch mb-5">
+                        <input type="checkbox" class="custom-control-input theme-choice" id="rtl-mode-switch" data-appStyle="assets/css/app-rtl.min.css">
+                        <label class="custom-control-label" for="rtl-mode-switch">RTL Mode</label>
+                    </div>
+
+                    <a href="https://1.envato.market/grNDB" class="btn btn-primary btn-block mt-3" target="_blank"><i class="mdi mdi-cart mr-1"></i> Purchase Now</a>
+
+                </div>
+
+            </div> <!-- end slimscroll-menu-->
+        </div>
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+
+        <!-- Required datatable js -->
+        <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <!-- Buttons examples -->
+        <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+        <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+        <script src="assets/libs/jszip/jszip.min.js"></script>
+        <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
+        <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
+        <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+        <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+        <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+        <!-- Responsive examples -->
+        <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+        <!-- Datatable init js -->
+        <script src="assets/js/pages/datatables.init.js"></script> 
+
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>
